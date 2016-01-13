@@ -1,0 +1,494 @@
+/* Angular UI Modal */
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  outline: 0;
+
+  /* Added */
+  overflow: hidden;
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000000;
+}
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-backdrop.in {
+  /* Removed */
+  /*opacity: 0.5;
+  filter: alpha(opacity=0.5);*/
+  
+  /* Added */
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.modal-header {
+  padding: 15px;
+  /* Removed */
+  /*border-bottom: 1px solid #e5e5e5;*/
+  min-height: 16.42857143px;
+
+  /* Added */
+  padding-bottom: 0;
+}
+.modal-header .close {
+  margin-top: -2px;
+
+  /* Added */
+  float: right;
+  background-color: transparent;
+  border: none;
+  border-radius: 3px;
+  font-size: 20px;
+  opacity: .5;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+  
+  /* Added */
+  font-size: 20px;
+  background: url("/admin/assets/img/dialog-alert-icon.png") no-repeat scroll left 50% transparent;
+  padding-left: 30px;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+  
+  /* Added */
+  font-size: 15px;
+  padding-top:0;
+}
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  /* Removed */
+  /*border-top: 1px solid #e5e5e5;*/
+
+  /* Added */
+  border-top: 1px solid #dddddd;
+  background-color: #efefef;
+  box-shadow: inset 0 1px 0 #FFF;
+  margin: 0 auto 0;
+  text-align: center;
+}
+
+/* Added */
+.modal-footer .btn {
+  width: 120px;
+  height: 35px;
+}
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+/* Added */
+@media (min-width: 980px) {
+    .modal-xl {
+        width: 980px;
+    }
+}
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.modal-footer:after {
+  clear: both;
+}
+/******************************************************
+* 
+* Nielsen Modals - load, save, alert, confirm 
+*
+/******************************************************/
+
+/*-------------------------*/
+
+/* Modal Alert            */
+
+/*-------------------------*/
+/*.nl-modal-alert {}*/
+/*-------------------------*/
+
+/* Modal Confirm          */
+
+/*-------------------------*/
+/*.nl-modal-confirm {}*/
+/*-------------------------*/
+
+/*  Modal Saving         */
+
+/*  CSS3 Loading Animation */
+
+/*-------------------------*/
+ .nl-modal-save {
+    border: 1px solid #999999;
+    border-radius: 0 0 4px 4px;
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #fff;
+    opacity: 0.9;
+    text-align: center;
+    width: 300px;
+    padding: 0.5em 0;
+    box-shadow: 3px 3px 4px #999999;
+    position: fixed;
+    top: -75px;
+    left: 50%;
+    margin-left: -150px;
+    /* half the width */
+    z-index: 99988;
+}
+.nl-modal-save-inner {
+    line-height: 18px;
+}
+.nl-modal-save-inner span {
+    display: block;
+}
+.nl-modal-save-inner div {
+    line-height: 12px;
+    min-height: 12px;
+}
+.nl-modal-save-inner div img {
+    border: 0 none;
+    padding: 0;
+    margin: 0;
+}
+.nl-modal-save-cover {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99987;
+    background-color: transparent;
+}
+.nl-modal-save-icon {
+    background: url("/admin/assets/img/icon-enabled-true.png") 0 center no-repeat;
+    display: inline-block;
+    height:17px;
+    margin-left:5px;
+    overflow: hidden;
+    width:16px;
+    font-family: arial, helvetica, sans-serif;
+    vertical-align: -2px;
+    line-height: 1.4em;
+}
+.nl-modal-save-in {
+    -webkit-transition: top 0.2s ease;
+    -moz-transition: top 0.2s ease;
+    -ms-transition: top 0.2s ease;
+    -o-transition: top 0.2s ease;
+    transition: top 0.2s ease;
+    top:-1px;
+}
+.nl-modal-save-out {
+    -webkit-transition: top 0.3s ease;
+    -moz-transition: top 0.3s ease;
+    -ms-transition: top 0.3s ease;
+    -o-transition: top 0.3s ease;
+    transition: top 0.3s ease;
+    top:-85px;
+}
+/*-------------------------*/
+
+/*  Modal Loading         */
+
+/*  CSS3 Loading Animation */
+
+/*-------------------------*/
+ .nl-modal-load {
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 11px;
+    box-shadow: 3px 3px 4px #999999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    /* approx half the height */
+    margin-left: -200px;
+    /* half the width */
+    z-index: 99998;
+}
+.nl-modal-load-inner {
+    padding: 10px;
+    font-size: 1.2em;
+}
+.nl-modal-load-cover {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99997;
+    background-color: transparent;
+}
+/* Spinner CSS3 animation for load */
+ #floatingBarsG {
+    position:relative;
+    width:26px;
+    height:32px;
+    margin: 7px auto 2px;
+}
+#floatingBarsG img {
+    width: 32px;
+    height: 32px;
+}
+#ellipsis {
+    width: 15px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 2px;
+    opacity: .9;
+}
+.blockG {
+    position:absolute;
+    background-color:#000000;
+    width:4px;
+    height:10px;
+    -moz-border-radius:4px 4px 0 0;
+    -moz-transform:scale(0.4);
+    -moz-animation-name:fadeG;
+    -moz-animation-duration:0.72s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -webkit-border-radius:4px 4px 0 0;
+    -webkit-transform:scale(0.4);
+    -webkit-animation-name:fadeG;
+    -webkit-animation-duration:0.72s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -ms-border-radius:4px 4px 0 0;
+    -ms-transform:scale(0.4);
+    -ms-animation-name:fadeG;
+    -ms-animation-duration:0.72s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    border-radius:4px 4px 0 0;
+    transform:scale(0.4);
+    animation-name:fadeG;
+    animation-duration:0.72s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+}
+#rotateG_01 {
+    left:0;
+    top:12px;
+    -moz-animation-delay:0.27s;
+    -moz-transform:rotate(-90deg);
+    -webkit-animation-delay:0.27s;
+    -webkit-transform:rotate(-90deg);
+    -ms-animation-delay:0.27s;
+    -ms-transform:rotate(-90deg);
+    animation-delay:0.27s;
+    transform:rotate(-90deg);
+}
+#rotateG_02 {
+    left:3px;
+    top:4px;
+    -moz-animation-delay:0.36s;
+    -moz-transform:rotate(-45deg);
+    -webkit-animation-delay:0.36s;
+    -webkit-transform:rotate(-45deg);
+    -ms-animation-delay:0.36s;
+    -ms-transform:rotate(-45deg);
+    animation-delay:0.36s;
+    transform:rotate(-45deg);
+}
+#rotateG_03 {
+    left:11px;
+    top:1px;
+    -moz-animation-delay:0.45s;
+    -moz-transform:rotate(0deg);
+    -webkit-animation-delay:0.45s;
+    -webkit-transform:rotate(0deg);
+    -ms-animation-delay:0.45s;
+    -ms-transform:rotate(0deg);
+    animation-delay:0.45s;
+    transform:rotate(0deg);
+}
+#rotateG_04 {
+    right:3px;
+    top:4px;
+    -moz-animation-delay:0.54s;
+    -moz-transform:rotate(45deg);
+    -webkit-animation-delay:0.54s;
+    -webkit-transform:rotate(45deg);
+    -ms-animation-delay:0.54s;
+    -ms-transform:rotate(45deg);
+    animation-delay:0.54s;
+    transform:rotate(45deg);
+}
+#rotateG_05 {
+    right:0;
+    top:12px;
+    -moz-animation-delay:0.63s;
+    -moz-transform:rotate(90deg);
+    -webkit-animation-delay:0.63s;
+    -webkit-transform:rotate(90deg);
+    -ms-animation-delay:0.63s;
+    -ms-transform:rotate(90deg);
+    animation-delay:0.63s;
+    transform:rotate(90deg);
+}
+#rotateG_06 {
+    right:3px;
+    bottom:3px;
+    -moz-animation-delay:0.72s;
+    -moz-transform:rotate(135deg);
+    -webkit-animation-delay:0.72s;
+    -webkit-transform:rotate(135deg);
+    -ms-animation-delay:0.72s;
+    -ms-transform:rotate(135deg);
+    animation-delay:0.72s;
+    transform:rotate(135deg);
+}
+#rotateG_07 {
+    bottom:0;
+    left:11px;
+    -moz-animation-delay:0.8099999999999999s;
+    -moz-transform:rotate(180deg);
+    -webkit-animation-delay:0.8099999999999999s;
+    -webkit-transform:rotate(180deg);
+    -ms-animation-delay:0.8099999999999999s;
+    -ms-transform:rotate(180deg);
+    animation-delay:0.8099999999999999s;
+    transform:rotate(180deg);
+}
+#rotateG_08 {
+    left:3px;
+    bottom:3px;
+    -moz-animation-delay:0.9s;
+    -moz-transform:rotate(-135deg);
+    -webkit-animation-delay:0.9s;
+    -webkit-transform:rotate(-135deg);
+    -ms-animation-delay:0.9s;
+    -ms-transform:rotate(-135deg);
+    animation-delay:0.9s;
+    transform:rotate(-135deg);
+}
+@-moz-keyframes fadeG {
+    0% {
+        background-color:#ffffff
+    }
+    100% {
+        background-color:#000000
+    }
+}
+@-webkit-keyframes fadeG {
+    0% {
+        background-color:#ffffff
+    }
+    100% {
+        background-color:#000000
+    }
+}
+@-ms-keyframes fadeG {
+    0% {
+        background-color:#ffffff
+    }
+    100% {
+        background-color:#000000
+    }
+}
+@keyframes fadeG {
+    0% {
+        background-color:#ffffff
+    }
+    100% {
+        background-color:#000000
+    }
+}

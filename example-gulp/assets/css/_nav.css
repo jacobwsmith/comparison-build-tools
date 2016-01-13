@@ -1,0 +1,388 @@
+/*
+* This includes the header and footer styles
+*/
+
+/* ==================================== */
+
+/* Top Logo/Navigation */
+
+/* ==================================== */
+ #header {
+    margin:0px auto 0 auto;
+    padding-top:5px 0 0 0;
+    text-align:left;
+    background-color:#fff;
+    min-width:1349px;
+}
+#account-menu {
+    display:block;
+    margin:-8px 8px 0 0;
+    float:right;
+    font-size:13px;
+}
+#account-menu li:first-child {
+    border:none;
+    font-weight:bold;
+}
+#account-menu li:last-child {
+    border:none;
+    float:right;
+    clear:both;
+    margin-top:0px;
+    margin-bottom:2px;
+}
+#account-menu li {
+    display:block;
+    float:left;
+    margin:0;
+    padding:0;
+    white-space:nowrap;
+    border-color:#fff #fff #fff #5b5959;
+    border-style:solid solid solid dotted;
+    border-width:1px;
+    padding:3px 5px 0;
+}
+#logo {
+    float:left;
+    margin-left:7px;
+}
+div.jjmenu {
+    -moz-box-shadow:3px 4px 2px #595959;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#595959')";
+    -webkit-box-shadow:3px 4px 2px #595959;
+    background:#fff;
+    border-radius:3px;
+    border:1px solid #ccc;
+    box-shadow:3px 4px 2px #595959;
+    filter:progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#595959');
+    margin-left:-2px;
+    margin-top:0px;
+    padding:5px 5px;
+    position:absolute;
+    z-index:999999999;
+}
+div.jj_menu_item {
+    color:#034b92;
+    background:#fff;
+    cursor:pointer;
+    padding:0px 5px;
+    font-weight:bold;
+}
+div.jj_menu_item:hover {
+    background:#3078ae;
+    cursor:pointer;
+    border-radius:2px;
+    color:#fff;
+}
+div.jj_menu_item span {
+    display:block;
+    padding:4px 4px 5px 4px;
+}
+.contextMenu {
+    background:url(/admin/assets/img/icon-pulldown-blue.png) #fff center right no-repeat;
+    padding-right:12px;
+}
+/* ==================================== */
+
+/* Bar Navigation */
+
+/* ==================================== */
+ #header {
+    height: 70px;
+    overflow: hidden;
+}
+#header div {
+    width:45%;
+    float:left;
+    padding:7px 11px 7px 25px
+}
+#header div+div {
+    float:right;
+    text-align:right;
+    padding:11px 25px 0 0;
+    font-size:1.2em;
+    line-height:1.4em
+}
+#nav:before, #nav:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#nav:after {
+    content: ' ';
+    display: block;
+    height: 0;
+    clear: all;
+}
+#nav {
+    width:100%;
+    background-color:#ea9a2a;
+    height:29px;
+    display:block;
+    margin:0;
+    z-index:1000;
+    position:relative;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    min-width:1349px;
+    padding:0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#nav ul {
+    padding: 0;
+    margin: 0;
+}
+#nav>li {
+    height:100%;
+    float:left;
+    position:relative;
+    list-style:none;
+    color:#fff;
+    font-size:1.5em;
+    border-right:1px solid #fff;
+    font-weight:bold;
+}
+#nav>li:first-child {
+    border-left:1px solid #fff
+}
+#nav>li>a {
+    color:#fff;
+    text-decoration:none;
+    font-weight:normal;
+    outline:none;
+    cursor:pointer;
+    padding:6px 25px 0;
+    display:block;
+    height:25px;
+    text-shadow:1px 1px 1px #999
+}
+#nav>li:first-child {
+    margin-left:111px
+}
+#nav>li>a:hover {
+    background:url(/admin/assets/img/nav-hover.png) center repeat-x
+}
+#nav>li>div {
+    margin-top:9px;
+    display:none;
+    background-color:#fff;
+    font-size: 13px;
+    border:1px solid #ccc;
+    padding:0px;
+    white-space:nowrap;
+    position:absolute;
+    border-radius:3px;
+    box-shadow:3px 3px 4px #999
+}
+#nav>li>div>ul {
+    display:block;
+    float:left;
+    padding: 1em;
+}
+#nav>li>div>ul>li {
+    padding:7px 0;
+}
+#nav>li>div>img {
+    display:block;
+    margin:-7px auto 0
+}
+#nav-reports {
+    width:615px;
+    margin-left:-16em;
+}
+#nav-reports ul.first {
+    border-right:1px dotted #ccc;
+    width: 230px;
+}
+.pulldown:after {
+    content:url(/admin/assets/img/icon-pulldown.png);
+    margin-left:4px
+}
+#account-menu li:last-child {
+    border:none;
+    float:right;
+    clear:both;
+    margin-top:0px;
+    margin-bottom:2px;
+}
+#account-menu li {
+    display:block;
+    float:left;
+    margin:0;
+    padding:0;
+    white-space:nowrap;
+    border-color:#fff #fff #fff #5b5959;
+    border-style:solid solid solid dotted;
+    border-width:1px;
+    padding:3px 5px 0;
+}
+/* ==================================== */
+
+/* Search */
+
+/* ==================================== */
+ #globalSearch {
+    margin: 0;
+    padding: 0;
+}
+.search-group {
+    border-collapse: separate;
+    display: inline;
+    position: relative;
+    float: right;
+    padding: 5px 0 0 0 !important;
+    margin: 0 !important;
+    font-size: 12px;
+    width: 100% !important;
+}
+.search-group, .search-group:before, .search-group:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.search-group > input {
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1em;
+    padding: 1px 0 1px 10px;
+    width: 168px;
+    display: inline-block;
+    position: relative;
+    margin: 0 !important;
+    min-height: 20px;
+    vertical-align: bottom;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 21px;
+    display: inline-block;
+}
+.search-group > input:focus {
+    -webkit-box-shadow: 0 0 5px #6f8ac1;
+    -moz-box-shadow:0 0 5px #6f8ac1;
+    border-radius: 5px;
+    border: 1px inset #5680d6;
+    box-shadow: 0 0 1px 1px #5680d6;
+    outline: none;
+}
+.search-group-btn {
+    display: inline-block;
+    margin-left: -27px;
+    padding: 0 !important;
+    width: auto;
+    position: relative;
+    font-size: 12px;
+    line-height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+}
+.search-btn, .search-btn:before, .search-btn:after, .search-icon, .search-icon:before, .search-icon:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.search-btn {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    width: 22px;
+    height:20px;
+    border-collapse: collapse;
+}
+.search-btn:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    border-radius: none;
+    border: none;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.search-icon {
+    background: url("/admin/assets/img/icon-search.png") no-repeat scroll right 5px center rgba(0, 0, 0, 0);
+    text-indent: 22px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0 !important;
+    padding: 0 0 0 16px !important;
+    height:16px;
+    border-collapse: collapse;
+    position: relative;
+    display: inline-block;
+}
+/* ==================================== */
+
+/* Footer */
+
+/* ==================================== */
+ #footer {
+    text-align:center;
+    font-size:.9em;
+    line-height:1.4em;
+    color:#acacac;
+    border:1px solid #ccc;
+    width:42%;
+    padding:5px;
+    margin-top:25px;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:7px;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    min-width:500px;
+}
+.fooBar {
+    padding:0 15px 0px 15px;
+}
+#footer a {
+    white-space:nowrap;
+}
+/* ==================================== */
+
+/* Hidden Footer */
+
+/* ==================================== */
+ #jump {
+    position:fixed;
+    bottom:0px;
+    background-color:#efefef;
+    border-top:1px solid #ccc;
+    width:100%;
+    padding:5px 0 5px 20px;
+    display:none;
+}
+#jump input[type="text"] {
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-size: 12px;
+    line-height: 1em;
+    min-height: 20px;
+    padding: 1px 5px 1px 10px;
+    width: 135px;
+}
+#jump select {
+    width:111px;
+}
+#goJump {
+    background-color: #43A6E2;
+    background-image: linear-gradient(#43A6E2, #277AC1);
+    border: 0 none;
+    border-radius: 0.25em;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+     padding: 0.325em 1em 0.3em;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+#jump label {
+    margin-left:7px;
+    margin-right:2px;
+}

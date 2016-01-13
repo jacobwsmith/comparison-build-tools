@@ -1,0 +1,502 @@
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: normal;
+    font-size: 14px;
+}
+label:hover{
+    cursor: pointer;
+}
+
+/* Form Group */
+ .form-group {
+    margin-bottom: 15px;
+}
+
+/**/
+.form-group .col-1,
+.form-group .col-2,
+.form-group .col-3,
+.form-group .col-4,
+.form-group .col-5,
+.form-group .col-6,
+.form-group .col-7,
+.form-group .col-8,
+.form-group .col-9,
+.form-group .col-10,
+.form-group .col-11,
+.form-group .col-12 {
+    padding-left: 7px !important;
+    padding-right: 8px !important;
+}
+
+/* Form Control for inputs, selects, textareas */
+ .form-control {
+    background-color: #EEF8FB;
+    background-image: none;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    display: block;
+    font-size: 14px;
+    height: 26px;
+    line-height: 1.42857;
+    padding: 2px 5px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+select.form-control{
+    /* 
+        Appearance none works in Chrome, Safari, and IE. Just not firefox 
+        - https://bugzilla.mozilla.org/show_bug.cgi?id=605985
+        - https://bugzilla.mozilla.org/show_bug.cgi?id=649849
+        Putting in ff specific css in case this is ever fixed.
+        Even assigning "menulist" to appearance does not work, however the 
+        "menulist-textfield" does work in Firefox
+        - https://developer.mozilla.org/en-US/docs/Web/CSS/-moz-appearance
+    */
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    padding-top: 3px;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-image: url("/admin/assets/img/select-arrows.png");
+}
+/* This will style MS Select Elements */
+select.form-control::-ms-expand {
+    padding: 0;
+    margin-left: 0;
+    border:none;
+    width:5px;
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(71, 194, 254, 0);
+}
+
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #EEEEEE;
+    cursor: not-allowed;
+    opacity: 1;
+    color: #999999;
+}
+.form-control:focus {
+    border-color: #5680D6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+    box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
+}
+textarea.form-control {
+    height: auto;
+}
+
+/* placeholders */
+.form-control::-webkit-input-placeholder {
+    color: #999999;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #999999;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+}
+.form-control:-ms-input-placeholder {
+    color: #999999;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+}
+.form-control:-moz-placeholder { /* Firefox 18- */
+    color: #999999;
+    opacity: 1;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: none;
+}
+.form-control:focus::-webkit-input-placeholder {
+    opacity: 0;
+    /* transition: opacity 0.1s 0.2s ease;  */
+}
+.form-control:focus::-moz-placeholder { /* Firefox 19+ */
+    opacity: 0;
+    /* transition: opacity 0.1s 0.2s ease;  */
+}
+.form-control:focus:-ms-input-placeholder {
+    opacity: 0;
+    /* transition: opacity 0.1s 0.2s ease;  */
+}
+.form-control:focus:-moz-placeholder { /* Firefox 18- */
+    opacity: 0;
+    /* transition: opacity 0.1s 0.2s ease;  */
+}
+
+/* File */
+input[type="file"] {
+    display: block;
+}
+/* Radio Checkbox */
+.radio, .checkbox {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 20px;
+    padding-left: 20px;
+    line-height: 1.4em;
+}
+.radio label, .checkbox label {
+    cursor: pointer;
+    display: inline;
+    font-weight: 400;
+
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+    float: left;
+    margin-left: -20px;
+}
+
+.input-lg {
+    font-size: 16px;
+    height: 40px;
+    padding: 8px 16px;
+}
+.input-sm {
+    font-size: 12px;
+    height: 30px;
+    padding: 6px 10px;
+}
+.input-xs {
+    font-size: 11px;
+    height: 22px;
+    padding: 3px 5px;
+}
+
+/*  
+*   =================================
+*   Form Inline > * 
+*   =================================
+*/
+ .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.form-inline .form-control {
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+}
+.form-inline .radio, .form-inline .checkbox {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+    vertical-align: middle;
+}
+.form-inline .radio input[type="radio"], .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+}
+
+/* Hides labels on inline */
+.sr-only {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*  
+*   =================================
+*   Form Horizontal > * 
+*   =================================
+*/
+ .form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.form-horizontal .control-label {
+    text-align: right;
+}
+.form-horizontal .control-label, .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 7px;
+}
+.checkbox label input {
+    /* adjusting cuz we are at a 12px font */
+    margin-top: 2px !important;
+}
+
+/*  
+*   =================================
+*   Radio and Checkbox Inline > * 
+*   =================================
+*/
+.radio-inline, .checkbox-inline {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding-left: 20px;
+    vertical-align: middle;
+    line-height: 1.2em;
+    padding-right: 10px;
+}
+
+/* if you would like to show what is required onload remove the .ng-dirty
+input.ng-dirty.ng-invalid, select.ng-dirty.ng-invalid  {
+    background-color: #FFF999;
+} */
+input.ng-invalid-required, select.ng-invalid-required, textarea.ng-invalid-required, div.ng-invalid-required, div.ng-invalid-required .ui-select-toggle {
+    background-color: #FFF999;
+}
+
+input:disabled.ng-invalid, select:disabled.ng-invalid, textarea:disabled.ng-invalid  {
+    background-color: #eeeeee;
+}
+
+/* please use .field-errors with ngMessages */
+.form-error-text-notification {
+    font-size:12px;
+    font-style: italic;
+    display:inline-block;
+    margin-left:5px;
+    color: #333333;
+}
+/* Checkbox Group for fancy checkboxes */
+.custom-group {
+    padding-left: 0;
+}
+.custom-group > label > span{
+    cursor: pointer;
+    display: inline-block;
+    height: 14px;
+    margin: -3px 5px 0 0;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 14px;
+}
+.custom-group input[type="checkbox"], .custom-group input[type="radio"]{
+    display: none;
+}
+.custom-group input[type="checkbox"]:checked + label > span, .custom-group input[type="radio"]:checked + label > span {
+    background-position: 0 -14px;
+}
+.custom-group input[type="checkbox"] + label > span {
+    background: url("/admin/assets/img/checkbox-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+} 
+.custom-group input[type="radio"] + label > span {
+    background: url("/admin/assets/img/radiobutton-sprite.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+/* use this class to toggle checkbox */
+.custom-checkbox-invalid{
+    background-position: 0 -28px !important;
+    background-color: #fff999 !important;
+}
+
+/* Detailed Labels */
+.label-detail{
+    border: #ccc solid 1px;
+    display: inline-block;
+    padding: 15px 15px 15px 15px;
+    border-radius: 5px;
+    background: #fff url(/assets/img/selection-grad.png) repeat-x;
+}
+.label-detail h3{
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+input[type=radio]:checked + label > .label-detail{
+    border-color: rgb(14, 132, 198);
+}
+/* Autocomplete*/
+input.autocomplete {
+    background-image: url("/admin/assets/img/icon-auto.png");
+    background-position: right 5px center;
+    background-repeat: no-repeat;
+}
+
+input + span.autocomplete-delete {
+    background-image: url("/admin/assets/img/icon-close.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    margin-left: -27px;
+    width: 20px;
+}
+
+/* Multiselect Used with multislect directive */
+.multiselect-selected-list {
+    width: 100%;
+    min-height: 31px;
+    height: auto;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-image: url("/admin/assets/img/select-arrows.png");
+}
+.multiselect-selected-list ul {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.multiselect-selected-list li {
+    background-color: #e7e7e7;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    cursor: default;
+    float: left;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    padding: 0 6px 0 3px
+}
+.multiselect-selected-list li i.fa{
+    cursor: pointer;
+}
+.multi-select {
+    position: relative;
+    height: 0;
+}
+.multi-select ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 200px;
+    z-index: 100;
+    border-top: none;
+    padding:7px 0 0 0;
+    margin: 0;
+    overflow: hidden;
+    overflow-y:scroll;
+    width:100%;
+    background-color:#fff;
+    border: 1px solid #ccc;
+    border-top:none;
+    font-size: 1.2em;
+}
+.multi-select ul li:focus {
+    border: none; 
+    outline: none;
+    background-color: #0069d9;
+    color: #fff;
+}
+.multi-select ul li {
+    background-color:#fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0 2px 1px 5px;
+    list-style: none;
+    line-height: 1.42857;
+    font-size: 14px;
+    outline: none;
+}
+.multi-select li.search {
+    padding-right:5px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+}
+.multi-select .search input {
+    margin-top:5px;
+    margin-bottom:5px;
+    background: url(/admin/assets/img/icon-search.png) no-repeat right 5px center;
+ }
+ .multi-select ul li.no-results {
+    font-weight:bold;
+ }
+
+/* ======================================================== */
+/* START Form Validation Standards */
+/* To be used with ngMessages */
+/* ======================================================== */
+/* Notice at the top of the form */
+.form-notification-key{
+    background-color: #fff999;
+    border-radius: 4px;
+    border: dotted 1px #ccc;
+    display: table;
+    font-size: 14px;
+    margin: 0 auto 20px;
+    padding: 3px 12px 3px 12px;
+    text-align: center;
+}
+
+/* Form Group Error gets toggled */
+.form-group-error{
+    /* nothing here */
+}
+/* List of errors */
+.field-errors{
+    color: red;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+/* Error Message used with ngMessages */
+.field-error-msg{
+    margin:0 0 -5px 0;
+    padding:0;
+}
+
+/* Error Animations used with ngAnimate) */
+ .field-error-msg.ng-enter {
+    transition:.1s ease all;
+    opacity:0;
+    height:0;
+}
+.field-error-msg.ng-enter.ng-enter-active {
+    height:23px;
+    opacity:1;
+}
+ .field-error-msg.ng-leave {
+    height:23px;
+    opacity:1;
+    transition:.1s ease all;
+}
+.field-error-msg.ng-leave.ng-leave-active {
+    height:0;
+    opacity:0;
+}
+.field-error-msg::-ms-clear { 
+    display: none; 
+}
+
+
+
+/* SCENARIO: Set the width */
+/*.form-group .form-control{
+    width: 100px;
+    display: inline-block;
+}*/
+
+/* SCENARIO: Add an icon after */
+/*.form-group span[class*="icon"]{
+    margin-left: 2px;
+}*/
+
+/* SCENARIO: Put the errors on the right, make sure you have enough room */
+/*.form-group .field-errors{
+    display: inline-block;
+    vertical-align: middle;
+}
+.field-error-msg{
+    margin: 0 0 0 2px;
+}*/
+
+/* ======================================================== */
+/* END Form Validation Standards */
+/* ======================================================== */
+
+

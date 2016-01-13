@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl as appVm">
+
+<head>
+    <title ng-bind="appVm.title"></title>
+
+    <!-- GLOBAL STYLES  -->
+    <link href="/assets/lib/normalize.css/normalize.css" rel="stylesheet">
+    <link href="/assets/css/_nav.css" rel="stylesheet">
+    <link href="/assets/css/_type.css" rel="stylesheet">
+    <link href="/assets/css/_grid.css" rel="stylesheet">
+    <link href="/assets/css/_tables.css" rel="stylesheet">
+    <link href="/assets/css/_helpers.css" rel="stylesheet">
+    <link href="/assets/css/_buttons.css" rel="stylesheet">
+    <link href="/assets/css/_panels.css" rel="stylesheet">
+    <link href="/assets/css/_forms.css" rel="stylesheet">
+    <link href="/assets/css/_icons.css" rel="stylesheet">
+    <link href="/assets/css/_breadcrumbs.css" rel="stylesheet">
+    <link href="/assets/css/_tabs.css" rel="stylesheet">
+    <link href="/assets/css/_summary.css" rel="stylesheet">
+    <link href="/assets/css/_dropdown.css" rel="stylesheet">
+    <link href="/assets/css/_font-awesome.css" rel="stylesheet">
+    <link href="/assets/css/_glyphicons.css" rel="stylesheet">
+    <link href="/assets/css/_modal.css" rel="stylesheet">
+    <link href="/assets/css/_alerts.css" rel="stylesheet">
+    <link href="/assets/css/_popover.css" rel="stylesheet">
+
+    <!-- PAGE SPECIFIC STYLES -->
+    <link href="app/app.css" rel="stylesheet">
+    <link href="app/summary/summary.css" rel="stylesheet">
+    <link href="app/list/list.css" rel="stylesheet">
+
+</head>
+
+<body ng-cloak>
+
+    <!-- HTML TEMPLATE (ENTRY POINT) -->
+    <div ng-include="'app/app.htm'"></div>
+
+    <!-- GLOBAL SCRIPTS -->
+    <script src="/assets/lib/jquery-2.1/dist/jquery.min.js"></script>
+    <script src="/assets/lib/angular-1.4/angular.min.js"></script>
+
+    <!-- PAGE SPECIFIC SCRIPTS -->
+    <script src="app/app.js"></script>
+    <script src="app/summary/summary.js"></script>
+    <script src="app/list/list.js"></script>
+
+</body>
+
+</html>

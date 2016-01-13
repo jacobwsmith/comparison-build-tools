@@ -1,0 +1,134 @@
+/* icons */
+ .icon-new, .icon-new-window, .icon-radar, .icon-survey, .icon-edit, .icon-delete, .icon-download, .icon-question, .icon-id, .icon-date, .icon-account, .icon-gear, .icon-create-rule, .icon-data, .icon-control, .icon-generate, .icon-reprocess, .icon-edit-rates, .icon-view, .icon-notes, .icon-weighting, .icon-next, .icon-filter, .icon-plus, .icon-minus, .icon-csv, .icon-broadcast,  .icon-sharing, .icon-newx2, .icon-info, .icon-pdf, .icon-caret, .icon-funnel, .icon-export, .icon-search, .icon-locked, .icon-color, .icon-alert, .icon-sticky-note, .icon-reply {
+    padding-left: 18px;
+    text-indent: 22px;
+    background-position: 10% 50%;
+    background-repeat: no-repeat;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.icon-notes {
+    background-image: url(/admin/assets/img/icon-notes.png);
+}
+.icon-new {
+    background-image: url(/admin/assets/img/icon-new.png);
+}
+.icon-new-window {
+    background-image: url(/admin/assets/img/icon-newWin.png);
+}
+.icon-radar {
+    background-image: url(/admin/assets/img/icon-radar.png);
+}
+.icon-survey {
+    background-image: url(/admin/assets/img/icon-survey.png);
+}
+.icon-edit {
+    background-image: url(/admin/assets/img/icon-edit.png);
+}
+.icon-delete {
+    background-image: url(/admin/assets/img/icon-delete.png);
+}
+.icon-download {
+    background-image: url(/admin/assets/img/icon-download.png);
+}
+.icon-question {
+    background-image: url(/admin/assets/img/icon-question-on.png);
+}
+.icon-id {
+    background-image: url(/admin/assets/img/icon-id.png);
+}
+.icon-date {
+    background-image: url(/admin/assets/img/icon-date.png);
+}
+.icon-account {
+    background-image: url(/admin/assets/img/icon-account.png);
+}
+.icon-gear {
+    background-image: url(/admin/assets/img/icon-gear.png);
+}
+.icon-create-rule {
+    background-image: url(/admin/assets/img/icon-createRule.png);
+}
+.icon-data {
+    background-image: url(/admin/assets/img/icon-data.png);
+}
+.icon-control {
+    background-image: url(/admin/assets/img/icon-control.png);
+}
+.icon-generate {
+    background-image: url(/admin/assets/img/icon-generate.png);
+}
+.icon-reprocess {
+    background-image: url(/admin/assets/img/icon-reprocess.png);
+}
+.icon-edit-rates {
+    background-image: url(/admin/assets/img/icon-editRates.png);
+}
+.icon-view {
+    background-image: url(/admin/assets/img/icon-view.png);
+}
+.icon-weighting {
+    background-image: url(/admin/assets/img/icon-weighting.png);
+}
+.icon-next{
+    background-image: url(/admin/assets/img/icon-next.png);
+}
+.icon-filter{
+    background-image: url(/admin/assets/img/icon-list.png);
+}
+.icon-plus{
+    background-image: url(/admin/assets/img/icon-plus-circle-16x16.png);
+}
+.icon-minus{
+    background-image: url(/admin/assets/img/icon-minus-circle-16x16.png);
+}
+.icon-csv{
+    background-image: url(/admin/assets/img/icon-csv.png);
+}
+.icon-broadcast{
+    background-image: url(/admin/assets/img/icon-broadcast.png);
+}
+.icon-sharing{
+    background-image: url(/admin/assets/img/icon-sharing.png);
+}
+.icon-newx2{
+    background-image: url(/admin/assets/img/icon-newx2.png);
+}
+.icon-info{
+    background-image: url(/admin/assets/img/icon-info.png);
+}
+.icon-pdf{
+   background-image: url(/admin/assets/img/icon-pdf.png); 
+}
+.icon-caret{
+    background-image: url(/admin/assets/img/icon-pulldown-blue.png);
+}
+.icon-funnel{
+    background-image: url(/admin/assets/img/icon-filter.png);
+}
+.icon-export{
+    background-image: url(/admin/assets/img/icon-export.png);
+}
+.icon-search{
+    background-image: url(/admin/assets/img/icon-search.png);
+}
+.icon-locked{
+    background-image: url(/admin/assets/img/icon-locked.png);
+}
+.icon-color{
+    background-image: url(/admin/assets/img/color.png);
+}
+.icon-alert{
+    background-image: url(/admin/assets/img/icon-alert.png);
+}
+.icon-sticky-note{
+    background-image: url(/admin/assets/img/16x16-icon-sheet.png);
+    background-position: -304px -48px;
+    margin-right: 1px;
+}
+.icon-reply{
+    background-image: url(/admin/assets/img/16x16-icon-sheet.png);
+    background-position: -64px 1px;
+    margin-right: 2px;
+    padding-left: 16px;
+}

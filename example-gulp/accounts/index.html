@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl as appVm">
+
+<head>
+    <title ng-bind="appVm.title"></title>
+
+    <!-- GLOBAL STYLES  -->
+    <link href="/dist/global.css" rel="stylesheet">
+
+    <!-- PAGE SPECIFIC STYLES -->
+    <link href="/dist/accounts/accounts.css" rel="stylesheet">	
+
+</head>
+
+<body ng-cloak>
+
+    <!-- HTML TEMPLATE (ENTRY POINT) -->
+    <div ng-include="'app/app.htm'"></div>
+
+    <!-- GLOBAL SCRIPTS -->
+    <script src="/dist/global.js"></script>
+
+    <!-- PAGE SPECIFIC SCRIPTS -->
+    <script src="/dist/accounts/accounts.js"></script>
+
+</body>
+
+</html>

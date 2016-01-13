@@ -1,0 +1,103 @@
+/* Popover wrapper for Inputs that get disabled */
+.tooltip-wrapper {
+    display:inline-block;
+    position:relative;
+    z-index: 0;
+}
+/* This will place a hidden layer over the input so the tooltip will work on mouseenter when the input is disabled */
+.tooltip-wrapper:after { 
+    content:' ';
+    display:block;
+    height:100%;
+    left:0;
+    position: absolute;
+    top:0;
+    width:100%;
+    z-index:0;
+}
+/* Toggles z-index when not disabled */
+.tooltip-wrapper input, .tooltip-wrapper select {
+    position:relative;
+    z-index:1;
+}
+/* Toggles z-index when disabled */
+.tooltip-wrapper input[disabled], .tooltip-wrapper select[disabled] {
+    z-index: -1;
+}
+
+.tooltip{
+  position: absolute;
+    z-index: 1070;
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    line-break: auto;
+}
+.tooltip.top {
+    padding: 5px 0;
+}
+.tooltip.right{
+    padding: 0 5px;
+}
+.tooltip.bottom {
+    padding: 5px 0;
+}
+.tooltip.left {
+    padding: 0 5px;
+}
+
+.tooltip-inner{
+  max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;
+}
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-width: 5px 5px 5px 0;
+    border-right-color: #000;
+}
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 0 5px 5px;
+    border-bottom-color: #000;
+}
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px 5px 0;
+    border-top-color: #000;
+}
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #000;
+}
