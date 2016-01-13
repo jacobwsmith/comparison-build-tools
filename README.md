@@ -20,7 +20,10 @@ $ python -m SimpleHTTPServer 8000
 
 ### Example Gulp
 
-This example contains a gulp build step that concatinates, minifies, and .
+This example contains a gulp build step that concatenates and minifies the css and javascript. The idea is that each page would contain a global and page specific version of the js and css greatly reducing the number of requests.
+
+TODO:
+  - TemplateCache the html templates to cut down on the number of requests
 
 Run Example:
 ```sh
