@@ -1,0 +1,50 @@
+/* Popover wrapper for Inputs that get disabled */
+.popover-wrapper {
+    display:inline-block;
+    position:relative;
+    z-index: 0;
+}
+/* This will place a hidden layer over the input so the popover will work on mouseenter when the input is disabled */
+.popover-wrapper:after { 
+    content:' ';
+    display:block;
+    height:100%;
+    left:0;
+    position: absolute;
+    top:0;
+    width:100%;
+    z-index:0;
+}
+/* Toggles z-index when not disabled */
+.popover-wrapper input, .popover-wrapper select {
+    position:relative;
+    z-index:1;
+}
+/* Toggles z-index when disabled */
+.popover-wrapper input[disabled], .popover-wrapper select[disabled] {
+    z-index: -1;
+}
+
+/* Popover Styling */
+.popover {
+    background-clip: padding-box;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 5px #aaa;
+    font-size: 15px;
+    left: -1000px;
+    margin: 0 0 0 10px;
+    max-width: 275px;
+    padding: 8px;
+    position: absolute;
+    text-align: left;
+    top: -1000px;
+    white-space: normal;
+    z-index: 9999;
+}
+/* Popover Title Styling */
+.popover h3 {
+    font-size: 1em;
+    margin:0;
+}

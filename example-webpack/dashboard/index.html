@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl as appVm">
+
+<head>
+    <title ng-bind="appVm.title"></title>
+
+    <!-- GLOBAL STYLES AND SCRIPTS  -->
+    <script type="text/javascript" src="../dist/commons.chunk.js" charset="utf-8"></script>
+    
+    <!-- PAGE SPECIFIC STYLES AND SCRIPTS  -->
+    <script type="text/javascript" src="../dist/dashboard.entry.chunk.js" charset="utf-8"></script>
+
+</head>
+
+<body ng-cloak>
+
+    <!-- HTML TEMPLATE (ENTRY POINT) -->
+    <div ng-include="'app/app.htm'"></div>
+
+</body>
+
+</html>
