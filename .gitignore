@@ -1,3 +1,5 @@
+typings
 example-gulp/node_modules/
 example-gulp/dist/
-typings
+example-webpack/node_modules/
+example-webpack/dist/
