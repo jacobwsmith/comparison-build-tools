@@ -1,0 +1,99 @@
+/* Tabs */
+ .tabs ul.tabs-horizontal {
+    height: 40px;
+    margin:0;
+    padding:0;
+    padding-left:12px;
+    overflow: hidden;
+}
+.tabs ul.tabs-horizontal:after {
+    display: block;
+    clear: both;
+    content:" ";
+    height: 0;
+    overflow: hidden;
+}
+.tabs ul.tabs-horizontal > li{
+    background: none repeat scroll 0 0 #f3f3f3;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 1px solid #bebebe;
+    color: #6c6c6c;
+    color: #444;
+    cursor: pointer;
+    display:inline-block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 38px;
+    margin-left:3px;
+    margin-top: 2px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    width: 157px;
+}
+.tabs ul.tabs-horizontal > li.active {
+    background: #f3f3f3;
+    /* IE10+ */
+    background: -ms-linear-gradient(top, #f3f3f3 0%, #f3f3f3 12%, #dddddd 29%, #e7e7e7 100%);
+    /* W3C */
+    background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 12%, #dddddd 29%, #e7e7e7 100%);
+    border-bottom: medium none;
+    color: #000;
+    height:40px;
+    margin-top: 1px;
+}
+
+/* Tab Content */
+.tabs .tab-content {
+    margin: -1px auto 0;
+    overflow: hidden;
+    padding:0 15px 0 15px;
+    padding-top:1px;
+    display:block;
+    border: solid 1px #ccc;
+}
+.tabs .tab-content-active {
+    display:block;
+}
+
+/* Tab Table */
+/* Corrections to allow tab-content to contain tables with proper borders and margin */
+.tabs .tab-table{
+    padding:0;
+}
+.tabs .tab-table section{
+    margin: 0;
+}
+.tabs .tab-table .group.box > .group-row{
+    border-right: none;
+    border-left: none;
+}
+.tabs .tab-table .group.box > .group-row:first-child {
+    border-top: none;
+}
+.tabs .tab-table .group.box > .group-row:last-child {
+    border-bottom: none;
+}
+
+/* tab status indications */
+.tab-status-incomplete, .tab-status-complete, .tab-status-disabled{
+    border: 1px solid #666550;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+.tab-status-incomplete {
+    background: #ecdf44;
+    background: linear-gradient(to bottom, #ecdf44 0%, #efe246 10%, #efe246 50%, #f5c903 60%, #f2c703 100%);
+}
+.tab-status-complete {
+    border: 1px solid #177005;
+    background: linear-gradient(to bottom, #0cbe1c 0%, #0cbe1c 50%, #0cb515 51%, #0cb515 100%);
+}
+.tab-status-disabled {
+    background: #d9d9d9;
+    background: linear-gradient(to bottom, #d9d9d9 0%, #dadada 10%, #d1d1d1 40%, #d1d1d1 50%, #f4f4f4 60%, #fefefe 100%);
+}

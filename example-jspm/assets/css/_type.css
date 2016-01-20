@@ -1,0 +1,31 @@
+/* ========================================== */
+/* type overall
+/* ========================================== */
+html, body {
+    /*  
+    *   Be careful changing these
+    *   will be inherited by child elements 
+    *   unless otherwise declared
+    */
+    font:12px/1.231 arial, helvetica, clean, sans-serif;
+    background-color:#fff;
+	line-height: 1.5em; /* ~ 18px */
+    margin: 0;
+    padding: 0;
+}
+
+a, a:active, a:visited, a:link, a:focus {
+    color:#034b92;
+    text-decoration:none;
+    font-weight:bold;
+    outline:none;
+    cursor:pointer;
+}
+a:hover {
+    text-decoration:underline;
+}
+
+h1 {
+    font-size: 1.75em;
+    margin: 0.67em 0;
+}
