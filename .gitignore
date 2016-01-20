@@ -3,3 +3,5 @@ example-gulp/node_modules/
 example-gulp/dist/
 example-webpack/node_modules/
 example-webpack/dist/
+example-jspm/node_modules/
+example-jspm/dist/
