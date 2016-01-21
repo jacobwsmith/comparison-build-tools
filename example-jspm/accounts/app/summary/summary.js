@@ -4,6 +4,8 @@
 //    summaryVm.title = 'Summary';''
 // });
 
+import './summary.css!';
+
 class SummaryCtrl {  
     constructor() {
         var summaryVm = this;

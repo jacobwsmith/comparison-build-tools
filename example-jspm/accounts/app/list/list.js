@@ -4,6 +4,8 @@
 //    listVm.title = 'List';
 // });
 
+import './list.css!';
+
 class ListCtrl {  
     constructor() {
         var listVm = this;
