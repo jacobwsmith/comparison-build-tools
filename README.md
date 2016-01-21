@@ -58,4 +58,6 @@ TODO: watch and bundle when changed
 Run Example:
 ```sh
 $ python -m SimpleHTTPServer 8004
+jspm bundle dsahboard/app/entry dsahboard/build.js
+jspm bundle accounts/app/entry accounts/build.js
 ```
