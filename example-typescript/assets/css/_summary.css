@@ -1,0 +1,108 @@
+/* ============================= */
+
+/* Stats - This needs to move    */
+
+/* ============================= */
+ .summary-title {
+    background: linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #CCCCCC;
+    border-radius: 4px 4px 0 0;
+    border-bottom: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 7px;
+}
+/* Group */
+ .group {
+    /* general and use across many */
+    /* used to apply border to bottom */
+}
+.summary-row {
+    margin: 0;
+    padding: 0;
+    border: solid #ccc 1px;
+    min-height: 1px;
+    overflow: hidden;
+}
+.group .summary-row {
+    border-bottom: none;
+}
+.group .summary-row:last-child {
+    border-bottom: solid #ccc 1px;
+}
+.summary-col {
+    float: left;
+    font-size: 12px;
+    border-right: solid 1px #ccc;
+    padding: 5px;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: -99994px;
+    padding-bottom: 99999px;
+}
+.summary-col.compact{
+    padding: 0;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+.summary-row.footer{
+    background-color: #e7e7e7;
+    overflow: hidden;
+}
+.summary-stat {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.summary-list {
+    margin: 5px 0 5px 0;
+    padding:0;
+}
+.summary-list > li {
+    display: list-item;
+    font-weight: bold;
+    line-height: 2em;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.summary-row > .summary-col:last-child {
+    border-right: none;
+}
+/* Spacing */
+ .one {
+    width: 100%;
+}
+.two {
+    width: 50%;
+}
+.three {
+    width: 33.33333333333333%;
+}
+.four {
+    width: 25%;
+}
+.five {
+    width: 20%;
+}
+.six {
+    width: 16.66666666666667%;
+}
+.seven {
+    width: 14.28571428571429%;
+}
+.eight {
+    width: 12.5%;
+}
+.nine {
+    width: 11.11111111111111%;
+}
+.ten {
+    width: 10%;
+}
+.eleven {
+    width: 9.09090909090909%;
+}
+.twelve {
+    width: 8.33333333333333%;
+}

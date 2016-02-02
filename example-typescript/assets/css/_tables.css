@@ -1,0 +1,424 @@
+/* ========================================== */
+
+/* .table 
+*   - Set the general spacing and padding on tables
+*/
+
+/* ========================================== */
+
+table.table {
+    width: 100%;
+    border-spacing: 0;
+    font-size: 0.9em;
+    margin: 0;
+    border-collapse: inherit;
+}
+table.table thead tr th {
+    line-height: 27px;
+    border-left: 0;
+    border-top: 0;
+    width: auto;
+    white-space: nowrap;
+    padding: 0 4px 0 4px;
+    min-width: 111px;
+}
+table.table tbody tr td {
+    padding: 5px;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+table.table tfoot td {
+    padding: 5px;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+/* ========================================== */
+
+/* table-fixed-header */
+
+/* Requires Javascript: Problem if scrollbar has a width like on window 7 */
+
+/*
+/// NOTE
+// MIGHT BE BETTER TO SYNC TBODY TD WIDTHS TO THE THEAD WIDTHS
+var timer = window.setInterval(function(){
+    var $ele = $('.js-benchmarks-create-edit-table');
+    if($ele.length!==0){
+        window.clearInterval(timer);
+        $ele.each(function() {
+            var tableWidth = $(this).innerWidth(),
+                rowWidth = $(this).find('tbody tr:first-child').innerWidth(),
+                adjustWidth = tableWidth - rowWidth,
+                $obj = $(this).find('thead tr th:last-child'),
+                width = $obj.innerWidth() + adjustWidth + 'px';
+            
+            //console.log('adjustWidth: ' + adjustWidth);
+            //console.log('width: ' + width);
+            
+            $obj.css({
+                'width': width,
+                'min-width': width,
+                'max-width': width
+            });
+        });
+    }
+}, 500);
+
+*/
+
+/* ========================================== */
+
+.table-fixed-header thead tr {
+    display: block;
+    position: relative;
+}
+.table-fixed-header tbody {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: 350px;
+}
+.table-fixed-header thead th, .table-fixed-header tbody td{
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+
+/* ========================================== */
+
+/* .table-index 
+*   - Sets the colors, borders and widths
+*/
+
+/* ========================================== */
+
+table.table-index thead tr {
+    background: #eeeeee;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #eeeeee 0%, #e7e7e7 27%, #d3d3d3 77%, #cdcdcd 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(27%, #e7e7e7), color-stop(77%, #d3d3d3), color-stop(100%, #cdcdcd));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%, #e7e7e7 27%, #d3d3d3 77%, #cdcdcd 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%, #e7e7e7 27%, #d3d3d3 77%, #cdcdcd 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%, #e7e7e7 27%, #d3d3d3 77%, #cdcdcd 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 0%, #e7e7e7 27%, #d3d3d3 77%, #cdcdcd 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#cdcdcd', GradientType=0);
+    /* IE6-9 */
+}
+table.table-index thead tr.info {
+    background-color: #E7E7E7;
+    background-image: none;
+}
+table.table-index thead tr th {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+table.table-index tbody tr td {
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    line-height: 1.4em;
+}
+table.table thead tr th:last-child, table.table tbody tr td:last-child {
+    border-right: none;
+}
+table.table-index tbody tr td select {
+    width: 121px;
+    margin-right: 2px;
+    color: #034b92;
+}
+/* .table foot */
+
+table.table-index tfoot tr {
+    background-color: #e7e7e7;
+}
+table.table-index tfoot td {
+    padding: 5px;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+table.table-index thead tr th:nth-child(1) {
+    min-width: 25px;
+}
+table.table-index thead tr th:nth-child(2) {
+    width: 100%;
+    text-align: left;
+}
+table.table-index tbody tr td:nth-child(1) {
+    min-width: 25px;
+    font-weight: bold;
+    height: 33px;
+}
+table.table-index tbody tr td:nth-child(2) {
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+}
+table.table-index tbody tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+table.table-index tbody tr:hover {
+    background-color: #e7f3ff;
+}
+table.table-index tbody .no-results:hover {
+    background-color: #ffffff;
+}
+/* ========================================== */
+
+/* .table-nav 
+*   - this is a div
+*/
+
+/* ========================================== */
+
+div.table-nav {
+    background-color: #e7e7e7;
+    font-size: .9em;
+    padding: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+div.table-nav-item {
+    border-left: 1px solid #ccc;
+    display: inline-block;
+    margin: 0;
+    min-height: 26px;
+    line-height: 25px;
+    font-weight: bold;
+    padding: 0 4px 0 4px;
+    vertical-align: middle;
+}
+div.table-nav-item select:hover {
+    cursor: pointer;
+}
+div.table-nav-item.text-left {
+    float: left;
+    border: none;
+}
+/* ========================================== */
+
+/* .table-pager */
+
+/* ========================================== */
+
+.table-pager-rows label {
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.table-pager-rows select {
+    width: auto !important;
+    font-weight: normal;
+    min-width: 50px;
+    margin-top: -2px;
+}
+.table-pager-display {
+    min-width: 71px;
+    text-align: center;
+    display: inline-block;
+}
+.table-pager-prev, .table-pager-prev-off, .table-pager-next, .table-pager-next-off {
+    display: inline-block;
+    height: 17px;
+    overflow: hidden;
+    width: 18px;
+    vertical-align: middle;
+}
+.table-pager-prev, .table-pager-prev-off {
+    background: url(/admin/assets/img/but-back.png) no-repeat;
+}
+.table-pager-next, .table-pager-next-off {
+    background: url(/admin/assets/img/but-next.png) no-repeat;
+}
+.table-pager-next:hover, .table-pager-prev:hover {
+    background-position: 0 -17px;
+    cursor: pointer;
+}
+.table-pager-prev-off, .table-pager-next-off {
+    opacity: 0.5;
+}
+/* ========================================== */
+
+/* Table Search */
+
+/* ========================================== */
+
+.table-search {
+    position: relative;
+}
+.table-search input {
+    background-image: url("/admin/assets/img/icon-search.png");
+    background-position: 131px 3px;
+    background-repeat: no-repeat !important;
+    padding-right: 20px !important;
+    font-weight: normal;
+    width: 150px !important;
+    margin-top: 2px;
+}
+.table-search-input:hover, .table-search-close:hover {
+    cursor: pointer;
+}
+.table-search-close {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    display: none;
+    /* This moves to inline-block */
+}
+.table-search-close-on {
+    display: inline-block;
+}
+.table-search-input-on {
+    background-image: none !important;
+}
+.table-no-records {
+    font-size: 1.6em;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 15.45px;
+    font-weight: bold;
+    text-align: center;
+}
+/* ========================================== */
+
+/* .col-sort */
+
+/* ========================================== */
+
+th.col-sort, th.col-sort-asc, th.col-sort-desc {
+    background: url(/admin/assets/img/thead-bg-transparent.png) no-repeat;
+    padding-right: 13px !important;
+}
+th.col-sort:hover, th.col-sort-asc:hover, th.col-sort-desc:hover {
+    cursor: pointer;
+}
+th.col-sort {
+    background-position: right bottom;
+}
+th.col-sort:hover {
+    background-position: right top;
+}
+th.col-sort-asc {
+    background-position: right -80px;
+}
+th.col-sort-desc {
+    background-position: right -25px;
+}
+/* Group */
+
+/* general and use across many */
+
+/* used to apply border to bottom */
+
+/*
+.group{}
+*/
+
+/* Box */
+
+/* used for child borders in this case */
+
+/*
+.box{}
+*/
+
+.group-row {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.group.box > .group-row {
+    border-top: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+}
+.group.box > .group-row:last-child {
+    border-bottom: solid 1px #ccc;
+    border-top: solid 1px #ccc;
+}
+
+/* Limits / Ellipsis a cell of data to one line */
+td.limit{
+    max-width: 1px;
+}
+td.limit .limit-text {
+    float: left;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+td.limit .limit-pad {
+    padding-right: 24px; /* COMPUTED WIDTH OF IMAGE INCL. PADDING/BORDER/MARGIN */
+    margin-right: -24px; /* COMPUTED NEG. WIDTH OF IMAGE INCL. PADDING/BORDER/MARGIN */
+}
+td.limit [class^="icon"] {
+    margin-left: 3px;
+}
+
+/* Table Dropdown Filter */
+.table-filter-dropdown {
+    background: none repeat scroll 0 0 #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 0 0 1px 1px;
+    margin-top: -1px;
+    position: absolute;
+    z-index: 999999999;
+    text-align: left;
+    margin-left: -5px;
+}
+.table-filter-dropdown h4 {
+    font-size: 13px;
+    margin: 0.5em;
+}
+.table-filter-dropdown ul {
+    margin: .33em;
+    padding: 0;
+}
+.table-filter-dropdown ul li {
+    list-style: none;
+    padding: 2px 7px;
+    margin: 0;
+    line-height: 1.6em;
+    border-radius: 3px;
+}
+.table-filter-dropdown ul li:hover {
+    color: #fff;
+    background-color: #3875d7;
+}
+.table-filter-dropdown ul li label {
+    margin-left: 4px;
+    cursor: pointer;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.table-filter-dropdown input[type="checkbox"]:checked + label {
+    font-weight:bold;
+}
+.table-filter-dropdown .button-container{
+    text-align: center;
+    padding-bottom: 11px;
+}
+.table-filter-dropdown-underlay{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000000;
+    opacity: 0.01;
+    z-index: 999999998;
+    
+}

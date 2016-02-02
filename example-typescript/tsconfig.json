@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outFile": "dashboard/module.js",
+        "sourceMap": true
+    },
+    "files": [
+        "dashboard/greeter.ts",
+        "dashboard/temp.ts"
+    ]
+}

@@ -1,0 +1,153 @@
+/* Disables inputs, selects, divs, spans, etc */
+.disabled{
+    -khtml-opacity: 0.5;
+    -moz-opacity:0.5;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    cursor: default !important;
+	filter: alpha(opacity=50);
+	opacity: 0.5;
+	pointer-events: none;
+}
+.disabled > *:hover{
+	cursor: default !important;
+}
+/*Text Helpers*/
+ .active-link {
+    color:#034b92;
+    cursor:pointer;
+    font-weight:bold;
+    outline:none;
+    text-decoration:none;
+}
+/* Group Helper for section titles */
+section.group{
+    margin-bottom: 2em;
+}
+.group-title{
+	/* Not sure we need this */
+}
+/* Form block-level help text here */
+.help-block {
+    color: #737373;
+    display: block;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    margin: 5px 0 10px;
+}
+.font-weight-normal {
+    font-weight: normal;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* 
+  Allow angular.js to be loaded in body, hiding cloaked elements until 
+  templates compile.  The !important is important given that there may be 
+  other selectors that are more specific or come later and might alter display.  
+ */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+/* 
+Simple Ellipsis Css
+--------------
+example:
+  <div class="ellipsis">
+      <div class="ellipsis-content">Long Winded Content</div>
+    </div>
+*/
+.ellipsis{
+  table-layout: fixed;
+    width: 100%;
+    display: table;
+}
+.ellipsis-content{
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: table-cell;
+}
+/* 
+LIMIT TEXT
+-------------------
+LIMITS TEXT WITH PADDING FOR ICONS, FILTERS AND MORE... 
+example:
+  <div class="limit">
+    <div class="limit-cell">
+        <div class="limit-content limit-pad">
+            Some long text you'd like to limit
+        </div>
+        <span class="icon-account"></span>
+    </div>
+  </div>
+*/
+div.limit{
+    display: table;
+    min-width: 100%;
+    max-width: 1px;
+}
+.limit-cell {
+    display: table-cell;
+    width: 100%;
+    text-align: left;
+    white-space: normal;
+    max-width: 1px;
+}
+.limit-content{
+    float: left;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+div.limit-pad {
+    /* 
+    Set this base on how much width your content takes up following this element
+    Note this could set this using javascript 
+    */
+    padding-right: 24px;
+    /* COMPUTED WIDTH OF IMAGE INCL. PADDING/BORDER/MARGIN */
+    margin-right: -24px;
+    /* COMPUTED NEG. WIDTH OF IMAGE INCL. PADDING/BORDER/MARGIN */
+}
+.limit [class^="icon"] {
+    margin-left: 5px;
+}
+/* Floats/Positioning */
+ .center {
+    text-align:center;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+/* Toggling content */
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.capitalize {
+	text-transform: capitalize;
+}
