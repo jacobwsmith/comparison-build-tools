@@ -5,3 +5,7 @@ example-webpack/node_modules/
 example-webpack/dist/
 example-jspm/node_modules/
 example-jspm/dist/
+example-typescript/node_modules/
+example-typescript/dist/
+example-webpack-babel/node_modules/
+example-webpack-babel/dist/

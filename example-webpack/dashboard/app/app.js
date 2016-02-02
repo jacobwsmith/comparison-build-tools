@@ -24,6 +24,7 @@ require("./../../assets/css/_popover.css");
 require("./app.css");
 require("./summary/summary.css");
 require("./list/list.css");
+require("./../../assets/components/foo/foo.css");
 
 // <!-- GLOBAL SCRIPTS -->
 require("./../../assets/lib/jquery-2.1/dist/jquery.min.js");
@@ -37,3 +38,4 @@ angular.module('app', []).controller('AppCtrl', function($scope){
 // <!-- PAGE SPECIFIC SCRIPTS -->
 require("./summary/summary.js");
 require("./list/list.js");
+require("./../../assets/components/foo/foo.js");

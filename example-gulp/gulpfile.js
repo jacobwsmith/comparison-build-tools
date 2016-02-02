@@ -28,7 +28,8 @@ var globalStyles = [
 ];
 var pageScripts = {
     'dashboard': [
-        './dashboard/app/**/*.js'
+        './dashboard/app/**/*.js',
+        './assets/components/foo/foo.js'
     ],
     'accounts': [
         './accounts/app/**/*.js'
@@ -36,7 +37,8 @@ var pageScripts = {
 };
 var pageStyles = {
     'dashboard': [
-        './dashboard/app/**/*.css'
+        './dashboard/app/**/*.css',
+        './assets/components/foo/foo.css'
     ],
     'accounts': [
         './accounts/app/**/*.css'
