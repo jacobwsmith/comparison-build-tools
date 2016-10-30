@@ -1,5 +1,7 @@
 # Comparison of Build Tools
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 A place to compare Build Tools for a "multi page" angular 1.x application.
 
 Examples:
